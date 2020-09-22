@@ -24,4 +24,3 @@ if zn == 'div':
         print(a // b)
     else:
         print('Деление на 0!')
-        
