@@ -1,7 +1,7 @@
 print('Введите исходные единицы имерения')
 print('Доступные: lea, mi, yd, ft, in')
 measure_1 = str(input())
-print('Введите новые единицы измерения')
+print('Введите новые единицы измерения!')
 print('Доступные: lea, mi, yd, ft, in')
 measure_2 = str(input())
 print('Сколько?')
