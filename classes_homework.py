@@ -24,7 +24,7 @@ class RNA:
         return isinstance(other, RNA) and (self.seq == other.seq)
 
     def __hash__(self) -> int:
-        return hash(self.seq)
+        return hash((self.seq))
 
     def gc_content(self):
         return (self.seq.count('G') + self.seq.count('C')) / len(self.seq) * 100
@@ -60,7 +60,7 @@ class DNA:
         return isinstance(other, DNA) and (self.seq == other.seq)
 
     def __hash__(self) -> int:
-        return hash(self.seq)
+        return hash((self.seq))
 
     def gc_content(self):
         return (self.seq.count('G') + self.seq.count('C')) / len(self.seq) * 100
