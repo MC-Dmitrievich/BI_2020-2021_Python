@@ -1,6 +1,3 @@
-import re
-
-
 class RNA:
     def __init__(self, seq):
         for i in seq:
@@ -75,6 +72,7 @@ class DNA:
     def transcribe(self):
         mRNA = self.seq.replace('G', 'c').replace('C', 'g').replace('A', 'u').replace('T', 'a')
         return RNA(seq=mRNA.upper())
+
 
 seq_1 = DNA('TGTTGGGGAATCATGC')
 seq_2 = DNA('TGTTGGGGAATCATGC')
