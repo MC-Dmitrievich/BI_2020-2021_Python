@@ -1,5 +1,7 @@
 class RNA:
     def __init__(self, seq):
+        if seq == '':
+            raise ValueError
         for i in seq:
             if i not in ['A', 'U', 'C', 'G']:
                 raise ValueError
@@ -36,6 +38,8 @@ class RNA:
 
 class DNA:
     def __init__(self, seq):
+        if seq == '':
+            raise ValueError
         for i in seq:
             if i not in ['A', 'T', 'C', 'G']:
                 raise ValueError
